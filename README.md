@@ -2,7 +2,7 @@
 
 <h2>Data Contamination Calibration for Black-box LLMs</h2>
 
-Wentao Ye<sup>1</sup>, &nbsp; Jiaqi Hu<sup>1</sup>, &nbsp; Liyao Li<sup>1</sup>, &nbsp; [Haobo Wang](https://hbzju.github.io/)<sup>1</sup>, &nbsp; Gang Chen<sup>1</sup>, &nbsp; [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en)<sup>1</sup>
+[Wentao Ye](https://github.com/yyy01)<sup>1</sup>, &nbsp; Jiaqi Hu<sup>1</sup>, &nbsp; Liyao Li<sup>1</sup>, &nbsp; [Haobo Wang](https://hbzju.github.io/)<sup>1</sup>, &nbsp; Gang Chen<sup>1</sup>, &nbsp; [Junbo Zhao](https://scholar.google.com/citations?user=8ipao8MAAAAJ&hl=en)<sup>1</sup>
 
 <sup>1</sup>Zhejiang University
 
@@ -47,14 +47,13 @@ Access our [Hugging Face](https://huggingface.co/datasets/darklight03/StackMIAsu
 ```json
 {"snippet": "SNIPPET1", "label": 1 or 0}
 {"snippet": "SNIPPET2", "label": 1 or 0}
-...
 ```
 - `label` is an optional field for labeled detection.
 - *label 1* denotes to members, while *label 0* denotes to non-members.
 
 ### Run PAC using black-box OpenAI models
 
-Set your API key and target model engine to run PAC on OpenAI models (increase `num_threads` for batch processing.):
+Set your API key and target model engine to run PAC on OpenAI models (increase `num_threads` for batch processing):
 ```bash
 python attack.py --dataset_path "DATASET_PATH" --api_key "YOUR_API_KEY" --model_engine "TARGET_MODEL_ENGINE" 
 ```
