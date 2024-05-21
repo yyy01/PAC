@@ -12,10 +12,11 @@
 </div>
 
 
-Paper (to-be-released) | StackMIA Framework (to-be-released) |  [StackMIAsub Benchmark](https://huggingface.co/datasets/darklight03/StackMIAsub) | [Polarized Augment Calibration Method](##-Detect-Data-Contamination-with-PAC) (i.e. the following repo) 
+[Paper](https://arxiv.org/abs/2405.11930) | [StackMIA Dataset](https://huggingface.co/datasets/darklight03/StackMIA) |  [StackMIAsub Benchmark](https://huggingface.co/datasets/darklight03/StackMIAsub) | [Polarized Augment Calibration Method](##-Detect-Data-Contamination-with-PAC) (i.e. the following repo) 
 
 ## News 🔥
 
+- [2024/05/21] We release our paper on Arxiv.
 - [2024/05/19] We release our code and benchmark.
 - [2024/05/16] Our paper is accepted by [ACL 2024](https://2024.aclweb.org/)! 🎉
 
@@ -38,7 +39,7 @@ The **StakcMIAsub** dataset serves as a benchmark, which supports most white- an
 
 Access our [Hugging Face](https://huggingface.co/datasets/darklight03/StackMIAsub) repo for more details.
 
-## Detect Data Contamination with PAC
+## Detect data contamination with PAC
 
 ### Data preparation
 
@@ -47,6 +48,7 @@ Access our [Hugging Face](https://huggingface.co/datasets/darklight03/StackMIAsu
 ```json
 {"snippet": "SNIPPET1", "label": 1 or 0}
 {"snippet": "SNIPPET2", "label": 1 or 0}
+...
 ```
 - `label` is an optional field for labeled detection.
 - *label 1* denotes to members, while *label 0* denotes to non-members.
@@ -77,5 +79,12 @@ Thanks for the following repos:
 ⭐️ If you find our implementation and paper helpful, please kindly cite our work :
 
 ```bibtex
-to-be-released
+@misc{ye2024data,
+      title={Data Contamination Calibration for Black-box LLMs}, 
+      author={Wentao Ye and Jiaqi Hu and Liyao Li and Haobo Wang and Gang Chen and Junbo Zhao},
+      year={2024},
+      eprint={2405.11930},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
